@@ -10,7 +10,7 @@ class DashboardWidget extends StatelessWidget {
         // width: 360,
         // height: 800,
         decoration: BoxDecoration(
-          color: Color.fromRGBO(184, 89, 17, 1),
+          color: Color.fromRGBO(143, 185, 228, 1),
         ),
         child: Stack(children: <Widget>[
           Positioned(
