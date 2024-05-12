@@ -19,6 +19,7 @@ class DashboardScreen extends StatelessWidget {
                     .center, //mengatur agar item stack images berada di tengah
                 clipBehavior: Clip.none,
                 children: [
+                  
                   Card(
                     //pembungkus item yang di timpa
                     shape: RoundedRectangleBorder(
@@ -131,6 +132,7 @@ class DashboardScreen extends StatelessWidget {
               ),
               // item stack di atas
               // item lain di bawah
+              
             ],
           ),
         ),
