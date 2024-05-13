@@ -19,7 +19,6 @@ class DashboardScreen extends StatelessWidget {
                     .center, //mengatur agar item stack images berada di tengah
                 clipBehavior: Clip.none,
                 children: [
-                  
                   Card(
                     //pembungkus item yang di timpa
                     shape: RoundedRectangleBorder(
@@ -132,7 +131,146 @@ class DashboardScreen extends StatelessWidget {
               ),
               // item stack di atas
               // item lain di bawah
-              
+              SizedBox(
+                height: 10,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'tindakan cepat',
+                  style: const TextStyle(
+                      fontWeight: FontWeight
+                          .bold), // Added const and fixed the TextStyle
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                //item tindakan cepat
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FloatingActionButton(
+                        onPressed: () {
+                          // ...
+                        },
+                        backgroundColor: Colors.white,
+                        child: const Icon(Icons.control_point),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text('update\nberita')
+                    ],
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FloatingActionButton(
+                        onPressed: () {
+                          // ...
+                        },
+                        backgroundColor: Colors.white,
+                        child: const Icon(Icons.control_point),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text('update\nekskul')
+                    ],
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FloatingActionButton(
+                        onPressed: () {
+                          // ...
+                        },
+                        backgroundColor: Colors.white,
+                        child: const Icon(Icons.control_point),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text('update\ndana')
+                    ],
+                  ),
+                ],
+              ), //item tindakan cepat
+              SizedBox(
+                height: 20,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'name page',
+                  style: const TextStyle(
+                      fontWeight: FontWeight
+                          .bold), // Added const and fixed the TextStyle
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Column(
+                children: [
+                  SizedBox(
+                    width: double.infinity,
+                    child: FloatingActionButton.extended(
+                      onPressed: () {},
+                      backgroundColor: Colors.white,
+                      label: Row(
+                        // Menggunakan Row untuk mengatur tata letak ikon dan teks
+                        children: [
+                          Icon(Icons.article),
+                          SizedBox(width: 8), // Jarak antara ikon dan teks
+                          Text('Berita'),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FloatingActionButton.extended(
+                      onPressed: () {},
+                      backgroundColor: Colors.white,
+                      label: Row(
+                        // Menggunakan Row untuk mengatur tata letak ikon dan teks
+                        children: [
+                          Icon(Icons.article),
+                          SizedBox(width: 8), // Jarak antara ikon dan teks
+                          Text('ekskul'),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FloatingActionButton.extended(
+                      onPressed: () {},
+                      backgroundColor: Colors.white,
+                      label: Row(
+                        // Menggunakan Row untuk mengatur tata letak ikon dan teks
+                        children: [
+                          Icon(Icons.article),
+                          SizedBox(width: 8), // Jarak antara ikon dan teks
+                          Text('pendanaan'),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
