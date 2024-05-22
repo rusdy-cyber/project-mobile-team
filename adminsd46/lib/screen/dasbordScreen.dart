@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adminsd46/screen/profil.dart';
+import 'package:adminsd46/screen/pro.dart';
+import 'package:adminsd46/screen/berita.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override
@@ -54,7 +56,7 @@ class DashboardScreen extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => ProfilScreen()),
+                                        builder: (context) => Profil_Screen()),
                                   );
                                 }, //mengatur fungsi ketika item di klik
                                 child: Text(
@@ -222,51 +224,91 @@ class DashboardScreen extends StatelessWidget {
               ),
               Column(
                 children: [
-                  SizedBox(
-                    width: double.infinity,
-                    child: FloatingActionButton.extended(
-                      onPressed: () {},
-                      backgroundColor: Colors.white,
-                      label: Row(
-                        // Menggunakan Row untuk mengatur tata letak ikon dan teks
-                        children: [
-                          Icon(Icons.article),
-                          SizedBox(width: 8), // Jarak antara ikon dan teks
-                          Text('Berita'),
-                        ],
-                      ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => berita()),
+                      );
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      )),
+                      minimumSize: MaterialStateProperty.all(Size(150, 70)),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(Icons.article),
+                        SizedBox(width: 8),
+                        Text('page berita'),
+                      ],
                     ),
                   ),
-                  SizedBox(height: 10,),
                   SizedBox(
-                    width: double.infinity,
-                    child: FloatingActionButton.extended(
-                      onPressed: () {},
-                      backgroundColor: Colors.white,
-                      label: Row(
-                        // Menggunakan Row untuk mengatur tata letak ikon dan teks
-                        children: [
-                          Icon(Icons.article),
-                          SizedBox(width: 8), // Jarak antara ikon dan teks
-                          Text('ekskul'),
-                        ],
-                      ),
+                    height: 10,
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      )),
+                      minimumSize: MaterialStateProperty.all(Size(150, 70)),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(Icons.article),
+                        SizedBox(width: 8),
+                        Text('page eksul'),
+                      ],
                     ),
                   ),
-                  SizedBox(height: 10,),
                   SizedBox(
-                    width: double.infinity,
-                    child: FloatingActionButton.extended(
-                      onPressed: () {},
-                      backgroundColor: Colors.white,
-                      label: Row(
-                        // Menggunakan Row untuk mengatur tata letak ikon dan teks
-                        children: [
-                          Icon(Icons.article),
-                          SizedBox(width: 8), // Jarak antara ikon dan teks
-                          Text('pendanaan'),
-                        ],
-                      ),
+                    height: 10,
+                  ),
+                  // SizedBox(
+                  //   width: double.infinity,
+                  //   child: FloatingActionButton.extended(
+                  //     onPressed: () {},
+                  //     backgroundColor: Colors.white,
+                  //     label: Row(
+                  //       // Menggunakan Row untuk mengatur tata letak ikon dan teks
+                  //       children: [
+                  //         Icon(Icons.article),
+                  //         SizedBox(width: 8), // Jarak antara ikon dan teks
+                  //         Text('pendanaan'),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  TextButton(
+                    onPressed: () {
+                      
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      )),
+                      minimumSize: MaterialStateProperty.all(Size(150, 70)),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(Icons.article),
+                        SizedBox(width: 8),
+                        Text('page pendanaan'),
+                      ],
                     ),
                   ),
                 ],

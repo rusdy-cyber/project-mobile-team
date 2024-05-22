@@ -31,12 +31,30 @@ class ProfilScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 10),
-              Text('Profil'),
+              Align(
+            alignment: Alignment.topLeft, // Menyesuaikan alignment
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                top: 0,
+                bottom: 0,
+                right: 0,
+              ), // Padding 16 di semua sisi
+              child: Text(
+                'Profil',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20.0, // Ukuran font untuk lebih jelas
+                ),
+                ),
+              ),
+            ),
+
+              // Text('Profil'),
               SizedBox(
                 height: 10,
               ),
@@ -58,14 +76,14 @@ class ProfilScreen extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Column(
                                 children: [
                                   Image.asset(
                                     'assets/images/user_profile.png',
-                                    height: 150,
-                                    width: 150,
+                                    height: 200,
+                                    width: 200,
                                   ),
                                   SizedBox(
                                     height: 10,

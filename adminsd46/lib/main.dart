@@ -1,4 +1,6 @@
+import 'package:adminsd46/screen/berita.dart';
 import 'package:adminsd46/screen/login_screen.dart';
+import 'package:adminsd46/screen/pro.dart';
 import 'package:adminsd46/screen/profil.dart';
 import 'package:adminsd46/screen/splash_sceen.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +32,9 @@ class MyApp extends StatelessWidget {
         '/login' : (context) => login_screen(),
         '/dasbord' :(context) => DashboardScreen(),
         '/bord':(context) => DashboardWidget(),
-        '/profil':(context) => ProfilScreen()
+        '/profil':(context) => ProfilScreen(),
+        '/pro':(context) => Profil_Screen(),
+        '/berita':(context) => berita(),
 
       },
       
