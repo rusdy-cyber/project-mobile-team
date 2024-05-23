@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:adminsd46/screen/profil.dart';
-import 'package:adminsd46/screen/pro.dart';
+import 'package:adminsd46/screen/tambah.dart';
+import 'package:flutter/material.dart';
+
 import 'package:adminsd46/screen/berita.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -56,7 +57,7 @@ class DashboardScreen extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => Profil_Screen()),
+                                        builder: (context) =>Profil()),
                                   );
                                 }, //mengatur fungsi ketika item di klik
                                 child: Text(
@@ -156,7 +157,11 @@ class DashboardScreen extends StatelessWidget {
                     children: [
                       FloatingActionButton(
                         onPressed: () {
-                          // ...
+                          Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>Tambah()),
+                                  );
                         },
                         backgroundColor: Colors.white,
                         child: const Icon(Icons.control_point),
@@ -175,7 +180,11 @@ class DashboardScreen extends StatelessWidget {
                     children: [
                       FloatingActionButton(
                         onPressed: () {
-                          // ...
+                          Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>Tambah()),
+                                  );
                         },
                         backgroundColor: Colors.white,
                         child: const Icon(Icons.control_point),
@@ -194,7 +203,11 @@ class DashboardScreen extends StatelessWidget {
                     children: [
                       FloatingActionButton(
                         onPressed: () {
-                          // ...
+                          Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>Tambah()),
+                                  );
                         },
                         backgroundColor: Colors.white,
                         child: const Icon(Icons.control_point),
@@ -253,6 +266,10 @@ class DashboardScreen extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => berita()),
+                      );
                       
                     },
                     style: ButtonStyle(
@@ -292,7 +309,10 @@ class DashboardScreen extends StatelessWidget {
                   // ),
                   TextButton(
                     onPressed: () {
-                      
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => berita()),
+                      );
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.white),

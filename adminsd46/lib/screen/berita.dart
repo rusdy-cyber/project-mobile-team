@@ -1,3 +1,5 @@
+import 'package:adminsd46/screen/dasbordScreen.dart';
+import 'package:adminsd46/screen/tambah.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:adminsd46/screen/login_screen.dart';
@@ -22,7 +24,10 @@ class berita extends StatelessWidget {
         backgroundColor: Color(0xffABC7C9),
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DashboardScreen()),
+                      );
           },
           icon: const Icon(Icons.arrow_back_ios),
         ),
@@ -87,7 +92,10 @@ class berita extends StatelessWidget {
                         children: [
                           FloatingActionButton(
                             onPressed: () {
-                              // ...
+                              Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Tambah()),
+                      );
                             },
                             backgroundColor: Colors.white,
                             child: const Icon(Icons.control_point),
@@ -95,7 +103,7 @@ class berita extends StatelessWidget {
                           SizedBox(
                             height: 5,
                           ),
-                          Text('update')
+                          Text('tambah')
                         ],
                       ),
                     ],
@@ -153,12 +161,107 @@ class berita extends StatelessWidget {
                             const SizedBox(width: 16),
                           ],
                         ),
+                        SizedBox(height: 10,),
+                        Row(
+                          children: [
+                            Expanded(
+                              flex: 2,
+                              child: TextButton(
+                                onPressed: () {},
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Color.fromARGB(255, 255, 255, 255)),
+                                  foregroundColor:
+                                      MaterialStateProperty.all(Colors.black),
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    side: BorderSide(
+                                        color: Colors.black, width: 2),
+                                  )),
+                                  minimumSize:
+                                      MaterialStateProperty.all(Size(150, 70)),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text('titel', style: TextStyle(fontSize: 20)),
+                                    Text('tanggal', style: TextStyle(fontSize: 20)),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 16),
+                          ],
+                        ),
+                        SizedBox(height: 10,),
+                        Row(
+                          children: [
+                            Expanded(
+                              flex: 2,
+                              child: TextButton(
+                                onPressed: () {},
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Color.fromARGB(255, 255, 255, 255)),
+                                  foregroundColor:
+                                      MaterialStateProperty.all(Colors.black),
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    side: BorderSide(
+                                        color: Colors.black, width: 2),
+                                  )),
+                                  minimumSize:
+                                      MaterialStateProperty.all(Size(150, 70)),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text('titel', style: TextStyle(fontSize: 20)),
+                                    Text('tanggal', style: TextStyle(fontSize: 20)),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 16),
+                          ],
+                        ),
+                        SizedBox(height: 10,),
+                        Row(
+                          children: [
+                            Expanded(
+                              flex: 2,
+                              child: TextButton(
+                                onPressed: () {},
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Color.fromARGB(255, 255, 255, 255)),
+                                  foregroundColor:
+                                      MaterialStateProperty.all(Colors.black),
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    side: BorderSide(
+                                        color: Colors.black, width: 2),
+                                  )),
+                                  minimumSize:
+                                      MaterialStateProperty.all(Size(150, 70)),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text('titel', style: TextStyle(fontSize: 20)),
+                                    Text('tanggal', style: TextStyle(fontSize: 20)),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 16),
+                          ],
+                        ),
                         // Tambahkan lebih banyak konten di sini jika diperlukan
-                        for (int i = 0; i < 10; i++)
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 8.0),
-                            child: Text('Item $i'),
-                          ),
+                      
                       ],
                     ),
                   ),
