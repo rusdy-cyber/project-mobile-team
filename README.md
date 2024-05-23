@@ -12,6 +12,8 @@ https://www.figma.com/file/MrI7Vtmvym6vmuy8no4EOd/Untitled?type=design&node-id=0
 
 <img src="https://github.com/rusdy-cyber/project-mobile-team/blob/main/figma/mobile2.gif" width="300px">
 
+*page*
+<img src="https://github.com/rusdy-cyber/project-mobile-team/blob/main/g/dasbbord.png" width="300px"><img src="https://github.com/rusdy-cyber/project-mobile-team/blob/main/g/profil.png" width="300px"><img src="https://github.com/rusdy-cyber/project-mobile-team/blob/main/g/berita.png" width="300px"><img src="https://github.com/rusdy-cyber/project-mobile-team/blob/main/g/tambah.png" width="300px"><img src="https://github.com/rusdy-cyber/project-mobile-team/blob/main/g/uplod-gambar.png" width="300px">
 
 ### my team kontribut
  - rusdy-cyber
